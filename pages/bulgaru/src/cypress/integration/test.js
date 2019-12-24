@@ -10,7 +10,7 @@ describe('test', function() {
 
       cy.get('input').clear().type('Новогодние сваты')
       cy.get('#react-autowhatever-1--item-0').click()
-      cy.get('.movie-info div').eq(1).should('have.text', '0')
+      cy.get('.movie-info div').eq(1).should('have.text', 'Rating: 0')
     })
     it('movie description', function() {
       cy.visit('http://server:9000')

@@ -33,20 +33,20 @@ docker run -p 80:80 course
     ```
     version: '3.2'
     services:
-    server:
-        build: .
-        environment:
-        - PORT=9000
-        ports:
-        - 9000:9000
-    cypress:
-        image: "cypress/included:3.2.0"
-        environment:
-        - CYPRESS_baseUrl=http://server:9000
-        working_dir: /e2e
-        volumes:
-        - ./:/e2e
-        depends_on:
-        - server
+        server:
+            build: .
+            environment:
+            - PORT=9000
+            ports:
+            - 9000:9000
+        cypress:
+            image: "cypress/included:3.2.0"
+            environment:
+            - CYPRESS_baseUrl=http://server:9000
+            working_dir: /e2e
+            volumes:
+            - ./:/e2e
+            depends_on:
+            - server
     ```
 * Тесты должны лежать в pages/$STUDENT/src/cypress/integration/test.js и открывать приложение на хосте http://server:9000

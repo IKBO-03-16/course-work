@@ -1,0 +1,13 @@
+.gamename {
+  font: 34px "Century Gothic";
+}
+.props{
+  font-size: 20px;
+  vertical-align: -100px;
+  text-align: center;
+}
+.inp{
+  text-align: center;
+  font-size: 20px;
+  width: 55px;
+}

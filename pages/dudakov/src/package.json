@@ -1,24 +1,7 @@
 {
-  "name": "GameOfLIfe",
-  "version": "1.0.0",
-  "description": "Cell automata game of life",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tigromol/GameOfLIfe.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tigromol/GameOfLIfe/issues"
-  },
-  "homepage": "https://github.com/tigromol/GameOfLIfe#readme",
+  "name": "hi-lo",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
@@ -42,5 +25,24 @@
       "webpack": "^4.41.2",
       "webpack-cli": "^3.3.10",
       "webpack-dev-server": "^3.9.0"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

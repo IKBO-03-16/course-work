@@ -11,10 +11,7 @@ function Main() {
           <div style={{ display: "flex", flexWrap: "wrap" }}>
           <Link to="/slinkin">
             <Button variant="primary" size="lg">Слинкин</Button>
-          </Link>  
-          <Link to="/evtushenko">
-            <Button variant="primary" size="lg" >Евтушенко</Button>
-          </Link>  
+          </Link>   
           </div>
         </nav>
       </section>

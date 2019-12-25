@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './../styles/app.css';
 import Autosuggest from 'react-autosuggest';
+import Titles from './Titles';
 
 class App extends Component {
   constructor(props) {
@@ -45,6 +46,7 @@ class App extends Component {
           </div>
           <div className='movie-image' style={{backgroundImage: `url(https://image.tmdb.org/t/p/original/${this.state.movie.poster}?api_key=33507de7c1b19be686f91394950c9a61)`}}></div>
         </div>
+        <Titles title='Модуль друга' maintainer='Булгару Андрей' />
       </div>
     )
   }

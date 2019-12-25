@@ -1,3 +1,4 @@
+import './style.css'
 
 $('#show').on('click',showPic);
 

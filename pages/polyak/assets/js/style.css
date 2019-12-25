@@ -1,7 +1,8 @@
 body
 {
-background-color: rgba(255, 128, 128, 0.5);
+    background-image: url(pic.jpg);
 }
+
 
 #stl{
   position: fixed;

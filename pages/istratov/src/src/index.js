@@ -194,7 +194,42 @@ class Field extends React.Component{
             </div>
             } 
     }
+class App extends Component
+{
+  constructor() {
+    super();
+    this.state = {
+      quote: ''
+    };
+    this.requestQuote = this.requestQuote.bind(this);
+    this.requestQuote();
+  }
+
+  requestQuote() {
+    fetch('https://api.kanye.rest').then(response => response.json()).then(result => { this.setState({ quote: result.quote })}).catch(console.log);
+  }
+  
+  render() {
+    return(
+      <div className="App-header">
+        <text data-testid="header-text">Wisdom of the Day</text>
+        <p/>
+        <div className="App-quote">
+          <text data-testid="quote-text">{this.state.quote}</text>
+        </div>
+        <p/>
+        <div className="App-button">
+            <p/>
+            <Button variant="primary" size="lg" onClick={this.requestQuote} data-testid="query-btn">Bless me with Wisdom</Button>
+            <p/>
+        </div>
+      </div>
+    );
+  }
+}
 
 
 let domContainer = document.getElementById('1')
+let domContainerFriend = document.getElementById('2')
 ReactDOM.render(<Field size = {50} />, domContainer);
+ReactDOM.render(<app />, domContainer);

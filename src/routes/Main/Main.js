@@ -10,16 +10,11 @@ function Main() {
         <nav>
           <div style={{ display: "flex", flexWrap: "wrap" }}>
           <Link to="/slinkin">
-            <Button variant="primary" size="lg" title="">Слинкин</Button>
+            <Button variant="primary" size="lg">Слинкин</Button>
           </Link>  
-          
-            <Button variant="primary" size="lg" title="Булгару" to="/slinkin"/>
-            <Button variant="primary" size="lg" title="Мокрушин" to="/slinkin"/>
-            <Button variant="primary" size="lg" title="Гайфулин" to="/slinkin"/>
-            <Button variant="primary" size="lg" title="Дудаков" to="/slinkin"/>
-            <Button variant="primary" size="lg" title="Евтушенко" to="/slinkin"/>
-            <Button variant="primary" size="lg" title="Литвиненко" to="/slinkin"/>
-            <Button variant="primary" size="lg" title="Качалов" to="/slinkin"/>
+          <Link to="/evtushenko">
+            <Button variant="primary" size="lg" >Евтушенко</Button>
+          </Link>  
           </div>
         </nav>
       </section>

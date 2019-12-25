@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/App.css';
 import ColorPickerView from './ColorPickerView';
+import { GithubPicker } from 'react-color';
 
 /**
  * Главный компонент.
@@ -31,6 +32,18 @@ class App extends React.Component {
             redChannel: red,
             greenChannel: green,
             blueChannel: blue
+        });
+    }
+
+    /**
+     * Коллбэк, информирующий о получении нового цвета.
+     * @param {ColorResult} 
+     */
+    onColorPicked(color) {
+        this.setState({
+            redChannel: color.rgb.r,
+            greenChannel: color.rgb.g,
+            blueChannel: color.rgb.b
         });
     }
 
@@ -72,6 +85,7 @@ class App extends React.Component {
                     <p>Технологии разработки ПО</p>
                     <p>Вариант 11</p>
                     <ColorPickerView onNewColor={(red, green, blue) => this.onColorChanged(red, green, blue)} />
+                    <GithubPicker onChange={(color) => this.onColorPicked(color)}/>
                     <p id="text_red">Красный - {red}</p>
                     <p id="text_green">Зеленый - {green}</p>
                     <p id="text_blue">Синий - {blue}</p>

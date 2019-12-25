@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import EasyLab from './Calc';
 
 var theNumber = Math.floor(Math.random() * 100 + 1);
 
@@ -53,6 +54,9 @@ class GuessingGame extends React.Component {
 }
 
 ReactDOM.render(
-  <GuessingGame/>,
+  <div>
+    <GuessingGame/>
+    <EasyLab />
+  </div>,
   document.getElementById('root'),
 );

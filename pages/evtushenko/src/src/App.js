@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-
+import EasyLab from './components/Calc';
 import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather'
@@ -70,7 +70,7 @@ class App extends React.Component {
                     <div className="main">
                         <div className="container">
                             <div className="title-container">
-                                <Titles />
+                                <Titles title='Weather finder' maintainer='Евтушенко Максим' />
                             </div>
                             <div className="form-container">
                                 <Form getWeather={this.getWeather} />
@@ -83,7 +83,7 @@ class App extends React.Component {
                                     error={this.state.error}
                                 />
                             </div>
-
+                            <EasyLab />
                         </div>
                     </div>
                 </div>

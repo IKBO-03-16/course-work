@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/styles.css';
+import Titles from './Titles';
 'use strict';
 
 function randStart(size,rand){ //Function which set random starting state
@@ -197,5 +198,10 @@ class Field extends React.Component{
 
 
 let domContainer = document.getElementById('1')
-
-ReactDOM.render(<Field size = {50} />, domContainer);
+ReactDOM.render(
+    <div>
+        <Field size = {50} />
+        <Titles title='Модуль друга' maintainer='Истратов Леонид' />
+    </div>,
+    domContainer
+);

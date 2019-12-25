@@ -1,0 +1,18 @@
+ul {
+  list-style: none;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+
+.rec {
+  align-items: center;
+  align-content: center;
+  justify-content: center; 
+  align-self: center;
+  display: flex; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

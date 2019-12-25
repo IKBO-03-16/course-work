@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ColorPickerView from './components/ColorPickerView'
+import ColorPickerView from 'src/components/ColorPickerView'
 import './App.css'
 
 class App extends Component

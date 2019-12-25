@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const Main = React.lazy(() => import('src/routes/Main'));
 const SlinkinPage = React.lazy(() => import('src/routes/SlinkinPage'));
+const ZagrebaevPage = React.lazy(() => import('src/routes/ZagrebaevPage'));
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/slinkin" component={SlinkinPage} />
+          <Route exact path="/zagrebaev" component={ZagrebaevPage} />
         </Switch>
       </React.Suspense>
     </Router>

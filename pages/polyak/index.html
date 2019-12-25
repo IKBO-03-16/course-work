@@ -10,8 +10,23 @@
 <meta name="Access-Control-Allow-Origin" content="*" />
 <meta name="Access-Control-Allow-Headers" content="*" />
 
-</head>
+
+<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Переводчик на транслит со статистикой</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <body>
+</head>
+ 
+    </header>
+<header>
+
+
+
+
+
+
 
 
 <div id="stl">
@@ -21,8 +36,36 @@
 
 <div id="stl2">
 <input type="text" id="Id">
+
 </div>
+
+
+
+<div id="header">Переводчик на транслит</div>
+<section>
+        <textarea id="input" placeholder="Введите текст и нажмите на кнопку Транслит."></textarea>
+        <p></p>
+        <input id="button" type="submit" value="Транслит"></input>
+        <p></p>
+        <textarea id="output" placeholder="Тут будет результат." disabled></textarea>
+    </section>
+
+
+    <section>
+        <h1>Числовая статистика по введенным словам</h1>
+        <h3>Символов:</h3>
+        <input id="symbols" type="text" placeholder="Символов" disabled></input>
+        <h3>Слов:</h3>
+        <input id="words" type="text" placeholder="Слов" disabled></input>
+        <h3>Предложений:</h3>
+        <input id="sentence" type="text" placeholder="Предложений" disabled></input>
+    </section>
+
+
+    
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="index_bundle.js"></script>
+
 
 <script type="text/javascript" src="bundle.js"></script></body>
 </html>

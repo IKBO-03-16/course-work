@@ -13,7 +13,7 @@ function Main() {
             <Button variant="primary" size="lg">Слинкин</Button>
           </Link>   
           <Link to="/istratov">
-            <Button variant="primary" size="lg">Слинкин</Button>
+            <Button variant="primary" size="lg">Истратов</Button>
           </Link>   
           </div>
         </nav>

@@ -37,7 +37,9 @@ class CountriesAndFlags extends React.Component {
   }
 }
 
-class Module enxtends React.Component {
+
+	
+class Module extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -47,21 +49,22 @@ class Module enxtends React.Component {
     this.requestQuote = this.requestQuote.bind(this);
     this.requestQuote();
 
-	requestQuote() {
-		fetch('https://api.kanye.rest').then(response => response.json()).then(result => { this.setState({ quote: result.quote })}).catch(console.log);
-	}
+  }
+  requestQuote() {
+	fetch('https://api.kanye.rest').then(response => response.json()).then(result => { this.setState({ quote: result.quote })}).catch(console.log);
+  }
+  
 	
     render() {
 		return(
-			<div className="App-header">
-				<text data-testid="header-text">Wisdom of the Day</text>
+			<div>
 				<div className="App-quote">
 						<text data-testid="quote-text">{this.state.quote}</text>
-					</div>
+				</div>
 				<p/>
 				<div className="App-button">
 					<p/>
-					<Button variant="primary" size="lg" onClick={this.requestQuote} data-testid="query-btn">Bless me with Wisdom</Button>
+					<button variant="primary" size="lg" onClick={this.requestQuote} data-testid="query-btn">Bless me with Wisdom</button>
 					<p/>
 				</div>
 			</div>

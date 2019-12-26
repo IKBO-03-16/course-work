@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import "bootswatch/dist/journal/bootstrap.css";
-import 'src/components/Translater';
+import fetch from 'node-fetch';
 import "./styles/App.css";
-
-var fetch = require("node-fetch");
-
 import { Navbar, NavItem, Nav, Grid, Row, Col } from "react-bootstrap";
 
 const PLACES = [

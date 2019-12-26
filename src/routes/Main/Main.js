@@ -21,6 +21,9 @@ function Main() {
           <Link to="/yazikov">
             <Button variant="primary" size="lg">Языков</Button>
           </Link>
+          <Link to="/bulgaru">
+            <Button variant="primary" size="lg">Булгару</Button>
+          </Link>
           </div>
         </nav>
       </section>

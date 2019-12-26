@@ -1,6 +1,6 @@
 import './kazhentsev.css';
-import translitModule from './translitModule';
-import countProcessor from './countProcessor';
+import translitModule from '../../components/translitModule';
+import countProcessor from '../../components/countProcessor';
 import 'chart.js';
 import React from 'react'
 import ReactDOM from 'react-dom';

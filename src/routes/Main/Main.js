@@ -36,9 +36,6 @@ function Main() {
           <Link to="/savelyev">
             <Button variant="primary" size="lg">Савельев</Button>
           </Link>
-          <Link to="">
-            <Button variant="primary" size="lg" style={{ position: left }}>Назад</Button>
-          </Link>
           </div>
         </nav>
       </section>

@@ -14,7 +14,20 @@
   color: white;
 }
 
+.Calview{
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+}
+
 .App-intro {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  display: flex;
   font-size: large;
 }
 

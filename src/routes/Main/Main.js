@@ -27,6 +27,9 @@ function Main() {
           <Link to="/evtushenko">
             <Button variant="primary" size="lg">Евтушенко</Button>
           </Link>
+          <Link to="/zagrebaev">
+            <Button variant="primary" size="lg">Загребаев</Button>
+          </Link>
           </div>
         </nav>
       </section>

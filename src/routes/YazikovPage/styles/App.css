@@ -1,4 +1,12 @@
 .App {
   margin: 50px;
   max-width: 800px;
+  transition: background-color 2s linear;
+}
+
+.App-colorPicker {
+  width: 200px; 
+  display: flex;
+  align-items: center;
+  font-size: 14px;
 }

@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 import React, { Component } from "react";
+import ColorPickerView from 'src/components/ColorPickerView'
 import "./styles/App.css";
 
 const PLACES = [
@@ -52,10 +53,44 @@ class App extends Component {
       activePlace: 0
     };
   }
+
+  onColorChanged(red, green, blue) {
+    this.setState({
+        redChannel: red,
+        greenChannel: green,
+        blueChannel: blue
+    });
+  }
+
+  onColorPicked(color) {
+      this.setState({
+          redChannel: color.rgb.r,
+          greenChannel: color.rgb.g,
+          blueChannel: color.rgb.b
+      });
+  }
+
+  getDarkerChannel(colorChannel, darkerPercent) {
+    return Math.round((colorChannel * (100 - darkerPercent) / 100)).toString(16).padStart(2, '0');
+  }
+
+  getDarkerColor(red, green, blue, darkerPercent) {
+    let redChannel = this.getDarkerChannel(red, darkerPercent);
+    let greenChannel = this.getDarkerChannel(green, darkerPercent);
+    let blueChannel = this.getDarkerChannel(blue, darkerPercent);
+    let color = "#" + redChannel + greenChannel + blueChannel;
+    return color;
+  }
+
   render() {
     const activePlace = this.state.activePlace;
+    let red = this.state.redChannel;
+    let green = this.state.greenChannel;
+    let blue = this.state.blueChannel;
+    let darkerBackground = this.getDarkerColor(red, green, blue, 20);
     return (
-      <div className="App">
+      <>
+      <div className="App" style={{ backgroundColor: darkerBackground }}>
         {PLACES.map((place, index) => (
           <button
             key={index}
@@ -68,6 +103,10 @@ class App extends Component {
         ))}
         <WeatherDisplay key={activePlace} zip={PLACES[activePlace].zip} />
       </div>
+      <div className="App-colorPicker">
+          <ColorPickerView onNewColor={(red, green, blue) => this.onColorChanged(red, green, blue)} />
+      </div>
+      </>
     );
   }
 }

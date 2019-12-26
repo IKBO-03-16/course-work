@@ -30,6 +30,9 @@ function Main() {
           <Link to="/zagrebaev">
             <Button variant="primary" size="lg">Загребаев</Button>
           </Link>
+          <Link to="/gaifulin">
+            <Button variant="primary" size="lg">Гайфулин</Button>
+          </Link>
           </div>
         </nav>
       </section>

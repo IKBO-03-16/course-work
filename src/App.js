@@ -9,6 +9,7 @@ const YazikovPage = React.lazy(() => import('src/routes/YazikovPage'));
 const BulgaruPage = React.lazy(() => import('src/routes/BulgaruPage'));
 const EvtushenkoPage = React.lazy(() => import('src/routes/EvtushenkoPage'));
 const ZagrebaevPage = React.lazy(() => import('src/routes/ZagrebaevPage'));
+const GaifulinPage = React.lazy(() => import('src/routes/GaifulinPage'));
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/bulgaru" component={BulgaruPage} />
           <Route exact path="/evtushenko" component={EvtushenkoPage} />
           <Route exact path="/zagrebaev" component={ZagrebaevPage} />
+          <Route exact path="/gaifulin" component={GaifulinPage} />
         </Switch>
       </React.Suspense>
     </Router>

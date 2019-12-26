@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles/app.css';
 import Autosuggest from 'react-autosuggest';
-import Titles from './Titles';
+import Titles from 'src/components/Titles';
 
 class App extends Component {
   constructor(props) {

@@ -90,7 +90,7 @@ function stateUpdate(mat){ //**TODO pseudo infinite field */
 }
 
 
-class Field extends React.Component{
+class App extends React.Component{
     constructor(props){
         super(props);
         this.state={
@@ -199,6 +199,5 @@ class Field extends React.Component{
             </div>
             } 
     }
-
 
 export default App;
